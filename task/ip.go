@@ -114,21 +114,21 @@ func (r *IPRanges) chooseIPv4() {
 }
 
 func (r *IPRanges) chooseIPv6() {
-	var tempIP uint8
 	for r.ipNet.Contains(r.firstIP) {
 		//fmt.Println(firstIP)
 		//fmt.Println(firstIP[0], firstIP[1], firstIP[2], firstIP[3], firstIP[4], firstIP[5], firstIP[6], firstIP[7], firstIP[8], firstIP[9], firstIP[10], firstIP[11], firstIP[12], firstIP[13], firstIP[14], firstIP[15])
 		if r.mask != "/128" {
-			r.firstIP[15] = randIPEndWith(255) // 随机 IP 的最后一段
-			r.firstIP[14] = randIPEndWith(255) // 随机 IP 的最后一段
+			// 随机 IP 的最后一段
+			r.firstIP[15] = randIPEndWith(255)
+			r.firstIP[14] = randIPEndWith(255)
 		}
 		targetIP := make([]byte, len(r.firstIP))
 		copy(targetIP, r.firstIP)
 		r.appendIP(targetIP)
-		for i := 13; i >= 0; i-- {
-			tempIP = r.firstIP[i]
-			r.firstIP[i] += randIPEndWith(255)
-			if r.firstIP[i] >= tempIP {
+		// 遍历到 /48
+		for i := 5; i >= 0; i-- {
+			r.firstIP[i]++
+			if r.firstIP[i] > 0 {
 				break
 			}
 		}
