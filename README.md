@@ -16,14 +16,14 @@
 > _分享我其他开源项目：[**TrackersList.com** - 全网热门 BT Tracker 列表！有效提高 BT 下载速度~](https://github.com/XIU2/TrackersListCollection) <img src="https://img.shields.io/github/stars/XIU2/TrackersListCollection.svg?style=flat-square&label=Star&color=4285dd&logo=github" height="16px" />_   
 > _[**UserScript** - 🐵 Github 高速下载、知乎增强、自动无缝翻页、护眼模式 等十几个**油猴脚本**！](https://github.com/XIU2/UserScript)<img src="https://img.shields.io/github/stars/XIU2/UserScript.svg?style=flat-square&label=Star&color=4285dd&logo=github" height="16px" />_   
 
-> 本项目也支持对**其他 CDN / 网站 IP** 延迟测速（如：[CloudFront IP 段](https://github.com/XIU2/CloudflareSpeedTest/issues/180)），但下载测速需自行寻找地址。
+> 本项目也支持对**其他 CDN / 网站 IP** 延迟测速（如：[AWS CloudFront CDN](https://github.com/XIU2/CloudflareSpeedTest/issues/180)），但下载测速需自行寻找地址。
 
 ****
 ## \# 快速使用
 
 ### 下载运行
 
-1. 下载编译好的可执行文件 [蓝奏云](https://pan.lanzouo.com/b0742hkxe) / [Github](https://github.com/XIU2/CloudflareSpeedTest/releases) 并解压。  
+1. 下载编译好的可执行文件 [蓝奏云](https://pan.lanzouq.com/b0742hkxe) / [Github](https://github.com/XIU2/CloudflareSpeedTest/releases) 并解压。  
 2. 双击运行 `CloudflareST.exe` 文件（Windows 系统），等待测速完成...  
 
 <details>
@@ -430,7 +430,13 @@ CloudflareST.exe -f 1.txt
 如果你遇到什么问题，可以先去 [**Issues**](https://github.com/XIU2/CloudflareSpeedTest/issues) 里看看是否有别人问过了（记得去看下  [**Closed**](https://github.com/XIU2/CloudflareSpeedTest/issues?q=is%3Aissue+is%3Aclosed) 的）。  
 如果没找到类似问题，请新开个 [**Issues**](https://github.com/XIU2/CloudflareSpeedTest/issues/new) 来告诉我！
 
-> _有问题请**大胆告诉我**，描述越详细越好（必要时可远程协助），如果不说那我怎么去完善功能或~~修复 BUG~~ 呢？！_
+> _有问题请**大胆告诉我**，描述越详细越好（随时可远程协助），如果不说那我怎么去完善功能或~~修复 BUG~~ 呢？！_
+
+****
+
+## 赞赏支持
+
+![微信赞赏](https://fastly.jsdelivr.net/gh/XIU2/TrackersListCollection/img/zs-01.png)![支付宝赞赏](https://fastly.jsdelivr.net/gh/XIU2/TrackersListCollection/img/zs-02.png)
 
 ****
 
@@ -444,4 +450,5 @@ CloudflareST.exe -f 1.txt
 ****
 
 ## License
+
 The GPL-3.0 License.
